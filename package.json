@@ -1,0 +1,19 @@
+{
+  "name": "appetite-delivery-app",
+  "version": "1.0.0",
+  "description": "appetite delivery landing page version 1.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chicacode/appetite-delivery-app.git"
+  },
+  "author": "Geri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chicacode/appetite-delivery-app/issues"
+  },
+  "homepage": "https://github.com/chicacode/appetite-delivery-app#readme"
+}
