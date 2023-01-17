@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/chicacode/appetite-delivery-app/issues"
   },
-  "homepage": "https://github.com/chicacode/appetite-delivery-app#readme"
+  "homepage": "https://github.com/chicacode/appetite-delivery-app#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
 }
