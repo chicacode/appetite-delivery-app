@@ -23,6 +23,7 @@
     "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
     "gulp-util": "^3.0.8",
+    "postcss": "^8.4.21",
     "sass": "^1.57.1"
   },
   "browserslist": [

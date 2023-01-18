@@ -1,4 +1,4 @@
-const { src, series, watch, dest } = require('gulp');
+const { src, series, watch, dest, parallel } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
@@ -19,4 +19,5 @@ function css(done) {
   }
   
   exports.css = css;
-  exports.dev = dev
+  exports.dev = dev;
+  exports.default = series(css, dev)
