@@ -5,7 +5,10 @@
     margin: 0;
     box-sizing: inherit;
 }
-
+html{
+    box-sizing: border-box;
+    font-size: 50%;
+}
 body{
     background-color: variables.$alpha-color;
     font-family: variables.$font_family;

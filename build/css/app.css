@@ -318,6 +318,12 @@ template {
           box-sizing: inherit;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 50%;
+}
+
 body {
   background-color: #f6f8ff;
   font-family: "Lato", sans-serif;
