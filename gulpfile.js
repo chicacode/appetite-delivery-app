@@ -1,13 +1,15 @@
-const { series, watch } = require('gulp');
+const { src, series, watch, dest } = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
 
 
-exports.build = series(
-    clean,
-    parallel(
-      cssTranspile,
-      series(jsTranspile, jsBundle)
-    ),
-    parallel(cssMinify, jsMinify),
-    publish
-  );
 
+
+
+function css() {
+    // body omitted
+    src('src/scss/app.scss')
+        .pipe(sass())
+        .pipe(dest('build/css'))
+  }
+  
+  exports.css = css;
