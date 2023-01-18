@@ -1,0 +1,19 @@
+@use "variables";
+
+.header {
+  background-color: variables.$primary;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__logo {
+}
+
+.nav {
+}
+
+.nav a {
+  text-decoration: none;
+}
