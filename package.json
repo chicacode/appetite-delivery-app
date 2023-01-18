@@ -18,5 +18,8 @@
   "homepage": "https://github.com/chicacode/appetite-delivery-app#readme",
   "dependencies": {
     "sass": "^1.57.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
   }
 }
