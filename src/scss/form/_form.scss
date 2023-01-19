@@ -1,0 +1,90 @@
+@use 'base/variables';
+@use 'base/mixins';
+
+.form{
+    &__grid{
+        @include mixins.ipad{
+            @include mixins.grid(2, variables.$padding-lg)
+        }
+    }
+
+    &__content{
+        background-color: variables.$primary;
+        padding: variables.$padding-lg;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    &__heading-title{
+        color: variables.$alpha-color;
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    &__heading-description{
+        color: variables.$alpha-color;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    &__search{
+        margin-bottom: variables.$margin-md;
+    }
+
+    &__label{
+        display: block;
+        text-transform: uppercase;
+        color: variables.$alpha-color;
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+
+    &__input{
+        width: 100%;
+        padding: 1.5rem;
+        border: none;
+        border-radius: 24px;
+    }
+
+    &__form-content{
+        margin-bottom: variables.$margin-md;
+    }
+
+    &__submit{
+        margin-top: variables.$margin-xl;
+        background-color: variables.$secondary;
+        font-size: 14px;
+        line-height: 1.43;
+        padding: 1.2rem 3rem;
+        font-weight: 700;
+        width: 100%;
+        height: 44px;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        border-radius: 24px;
+        transition: background-color 0.3s ease;
+        color: variables.$alpha-color;
+
+        &:hover {
+            cursor: pointer;
+            background-color: variables.$accent;
+            color: variables.$primary;
+          }
+    }
+
+    &__img-content{
+        margin-top: variables.$margin-md;
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__image{
+        width: 30rem;
+        @include mixins.desktop{
+            width: 100%;
+        }
+    }
+
+}

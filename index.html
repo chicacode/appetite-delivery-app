@@ -36,243 +36,362 @@
         <img src="./build/img/Appetite.svg" alt="app delivery logo" />
       </div>
       <nav class="nav" aria-label="">
-        <a href="https://glovoapp.com/" class="nav_link nav_link-get-started">Get started</a>
-        <a href="https://glovoapp.com/" class="nav_link nav_link-register">Register Restaurant</a>
+        <a href="https://glovoapp.com/" class="nav_link nav_link-get-started"
+          >Get started</a
+        >
+        <a href="https://glovoapp.com/" class="nav_link nav_link-register"
+          >Register Restaurant</a
+        >
       </nav>
     </header>
 
     <!-- search a restaurant -->
     <section class="container form">
-      <div class="form_grid">
+      <div class="form__grid">
         <div class="form__content">
           <h2 class="form__heading-title">Food delivery and more</h2>
-          <p>Groceries, shop, pharmacy and anything</p>
+          <p class="form__heading-description">
+            Groceries, shop, pharmacy and anything
+          </p>
           <form class="form__search">
-            <label for="restaurant" class="form__label">Restaurant</label>
-            <input type="text" name="restaurant" id="restaurant" class="form__input">
+            <div class="form__form-content">
+              <label for="restaurant" class="form__label">Restaurant</label>
+              <input
+                type="text"
+                name="restaurant"
+                id="restaurant"
+                class="form__input"
+                placeholder="search reataurant"
+              />
+            </div>
+            <input
+              type="submit"
+              name="restaurant"
+              id="restaurant"
+              class="form__submit"
+              value="search"
+            />
           </form>
+        </div>
+
+        <div class="form__img-content">
+            <img src="./build/img/worker-img.svg" alt="search content image" class="form__image">
         </div>
       </div>
     </section>
 
     <!-- steps -->
     <section class="steps">
-      <img class="steps__wave" src="build/img/wave.svg" alt="imagen wave">
+      <img class="steps__wave" src="build/img/wave.svg" alt="imagen wave" />
 
       <div class="steps__content">
-          <h2 class="steps__heading">How does it work? <span class="steps__heading--description">tan fácil como 1,2 y 3</span></h2>
-          <div class="steps__grid container">
-              <div class="steps__step">
-                  <img class="steps__image" src="build/img/step_1.png" alt="img step app">
-              </div>
-              <div class="steps__step">
-                  <img class="steps__image" src="build/img/step_2.png" alt="img step app">
-              </div>
-              <div class="steps__step">
-                  <img class="steps__image" src="build/img/step_3.png" alt="img step app">
-              </div>
+        <h2 class="steps__heading">
+          How does it work?
+          <span class="steps__heading--description"
+            >tan fácil como 1,2 y 3</span
+          >
+        </h2>
+        <div class="steps__grid container">
+          <div class="steps__step">
+            <img
+              class="steps__image"
+              src="build/img/step_1.png"
+              alt="img step app"
+            />
           </div>
+          <div class="steps__step">
+            <img
+              class="steps__image"
+              src="build/img/step_2.png"
+              alt="img step app"
+            />
+          </div>
+          <div class="steps__step">
+            <img
+              class="steps__image"
+              src="build/img/step_3.png"
+              alt="img step app"
+            />
+          </div>
+        </div>
       </div>
-  </section>
+    </section>
 
-  <!-- Top restaurants -->
+    <!-- Top restaurants -->
 
-  <main class="favorites">
-    <h2 class="favorites__heading">Top Restaurants and more</h2>
+    <main class="favorites">
+      <h2 class="favorites__heading">Top Restaurants and more</h2>
 
-    <div class="favorites__grid contenedor">
+      <div class="favorites__grid contenedor">
         <div class="favorite">
-            <div class="favorite__grid">
-                <div class="favorite__imagen">
-                    <img src="build/img/logo_salads.png" alt="logo restaurant">
-                </div>
-
-                <div class="favorite__contenido">
-                    <img src="build/img/stars.png" alt="calificacion restaurant">
-
-                    <h3 class="favorite__name">Green salads</h3>
-                    <p class="favorite__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
-                </div>
+          <div class="favorite__grid">
+            <div class="favorite__imagen">
+              <img src="build/img/logo_salads.png" alt="logo restaurant" />
             </div>
-        </div> <!--.favorite-->
 
-        <div class="favorite">
-            <div class="favorite__grid">
-                <div class="favorite__imagen">
-                    <img src="build/img/logo_salads.png" alt="logo restaurant">
-                </div>
+            <div class="favorite__contenido">
+              <img src="build/img/stars.png" alt="calificacion restaurant" />
 
-                <div class="favorite__contenido">
-                    <img src="build/img/stars.png" alt="calificacion restaurant">
-
-                    <h3 class="favorite__name">McDonalds</h3>
-                    <p class="favorite__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
-                </div>
+              <h3 class="favorite__name">Green salads</h3>
+              <p class="favorite__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure
+                sed! Ducimus magnam eveniet fugit atque maxime architecto
+                necessitatibus esse.
+              </p>
             </div>
-        </div> <!--.favorite-->
+          </div>
+        </div>
+        <!--.favorite-->
 
         <div class="favorite">
-            <div class="favorite__grid">
-                <div class="favorite__image">
-                    <img src="build/img/logo_salads.png" alt="logo restaurant">
-                </div>
-
-                <div class="favorite__contenido">
-                    <img src="build/img/stars.png" alt="calificacion restaurant">
-
-                    <h3 class="favorite__name">KFC</h3>
-                    <p class="favorite__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
-                </div>
+          <div class="favorite__grid">
+            <div class="favorite__imagen">
+              <img src="build/img/logo_salads.png" alt="logo restaurant" />
             </div>
-        </div> <!--.favorite-->
+
+            <div class="favorite__contenido">
+              <img src="build/img/stars.png" alt="calificacion restaurant" />
+
+              <h3 class="favorite__name">McDonalds</h3>
+              <p class="favorite__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure
+                sed! Ducimus magnam eveniet fugit atque maxime architecto
+                necessitatibus esse.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--.favorite-->
 
         <div class="favorite">
-            <div class="favorite__grid">
-                <div class="favorite__imagen">
-                    <img src="build/img/logo_salads.png" alt="logo restaurant">
-                </div>
-
-                <div class="favorite__contenido">
-                    <img src="build/img/stars.png" alt="calificacion restaurant">
-
-                    <h3 class="favorite__name">Tacos</h3>
-                    <p class="favorite__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
-                </div>
+          <div class="favorite__grid">
+            <div class="favorite__image">
+              <img src="build/img/logo_salads.png" alt="logo restaurant" />
             </div>
-        </div> <!--.favorite-->
+
+            <div class="favorite__contenido">
+              <img src="build/img/stars.png" alt="calificacion restaurant" />
+
+              <h3 class="favorite__name">KFC</h3>
+              <p class="favorite__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure
+                sed! Ducimus magnam eveniet fugit atque maxime architecto
+                necessitatibus esse.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--.favorite-->
 
         <div class="favorite">
-            <div class="favorite__grid">
-                <div class="favorite__imagen">
-                    <img src="build/img/logo_salads.png" alt="logo restaurant">
-                </div>
-
-                <div class="favorite__contenido">
-                    <img src="build/img/stars.png" alt="calificacion restaurant">
-
-                    <h3 class="favorite__name">Sushi</h3>
-                    <p class="favorite__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
-                </div>
+          <div class="favorite__grid">
+            <div class="favorite__imagen">
+              <img src="build/img/logo_salads.png" alt="logo restaurant" />
             </div>
-        </div> <!--.favorite-->
+
+            <div class="favorite__contenido">
+              <img src="build/img/stars.png" alt="calificacion restaurant" />
+
+              <h3 class="favorite__name">Tacos</h3>
+              <p class="favorite__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure
+                sed! Ducimus magnam eveniet fugit atque maxime architecto
+                necessitatibus esse.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--.favorite-->
 
         <div class="favorite">
-            <div class="favorite__grid">
-                <div class="favorite__imagen">
-                    <img src="build/img/logo_salads.png" alt="logo restaurant">
-                </div>
-
-                <div class="favorite__contenido">
-                    <img src="build/img/stars.png" alt="calificacion restaurant">
-
-                    <h3 class="favorite__name">Pizza</h3>
-                    <p class="favorite__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
-                </div>
+          <div class="favorite__grid">
+            <div class="favorite__imagen">
+              <img src="build/img/logo_salads.png" alt="logo restaurant" />
             </div>
-        </div> <!--.favorite-->
+
+            <div class="favorite__contenido">
+              <img src="build/img/stars.png" alt="calificacion restaurant" />
+
+              <h3 class="favorite__name">Sushi</h3>
+              <p class="favorite__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure
+                sed! Ducimus magnam eveniet fugit atque maxime architecto
+                necessitatibus esse.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--.favorite-->
 
         <div class="favorite">
-            <div class="favorite__grid">
-                <div class="favorite__imagen">
-                    <img src="build/img/logo_salads.png" alt="logo restaurant">
-                </div>
-
-                <div class="favorite__contenido">
-                    <img src="build/img/stars.png" alt="calificacion restaurant">
-
-                    <h3 class="favorite__name">Subway</h3>
-                    <p class="favorite__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
-                </div>
+          <div class="favorite__grid">
+            <div class="favorite__imagen">
+              <img src="build/img/logo_salads.png" alt="logo restaurant" />
             </div>
-        </div> <!--.favorite-->
+
+            <div class="favorite__contenido">
+              <img src="build/img/stars.png" alt="calificacion restaurant" />
+
+              <h3 class="favorite__name">Pizza</h3>
+              <p class="favorite__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure
+                sed! Ducimus magnam eveniet fugit atque maxime architecto
+                necessitatibus esse.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--.favorite-->
 
         <div class="favorite">
-            <div class="favorite__grid">
-                <div class="favorite__imagen">
-                    <img src="build/img/logo_salads.png" alt="logo restaurant">
-                </div>
-
-                <div class="favorite__contenido">
-                    <img src="build/img/stars.png" alt="calificacion restaurant">
-
-                    <h3 class="favorite__name">Ramen</h3>
-                    <p class="favorite__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
-                </div>
+          <div class="favorite__grid">
+            <div class="favorite__imagen">
+              <img src="build/img/logo_salads.png" alt="logo restaurant" />
             </div>
-        </div> <!--.favorite-->
+
+            <div class="favorite__contenido">
+              <img src="build/img/stars.png" alt="calificacion restaurant" />
+
+              <h3 class="favorite__name">Subway</h3>
+              <p class="favorite__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure
+                sed! Ducimus magnam eveniet fugit atque maxime architecto
+                necessitatibus esse.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--.favorite-->
 
         <div class="favorite">
-            <div class="favorite__grid">
-                <div class="favorite__imagen">
-                    <img src="build/img/logo_salads.png" alt="logo restaurant">
-                </div>
-
-                <div class="favorite__contenido">
-                    <img src="build/img/stars.png" alt="calificacion restaurant">
-
-                    <h3 class="favorite__name">Indian Food</h3>
-                    <p class="favorite__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
-                </div>
+          <div class="favorite__grid">
+            <div class="favorite__imagen">
+              <img src="build/img/logo_salads.png" alt="logo restaurant" />
             </div>
-        </div> <!--.favorite-->
+
+            <div class="favorite__contenido">
+              <img src="build/img/stars.png" alt="calificacion restaurant" />
+
+              <h3 class="favorite__name">Ramen</h3>
+              <p class="favorite__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure
+                sed! Ducimus magnam eveniet fugit atque maxime architecto
+                necessitatibus esse.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--.favorite-->
 
         <div class="favorite">
-            <div class="favorite__grid">
-                <div class="favorite__imagen">
-                    <img src="build/img/logo_salads.png" alt="logo restaurant">
-                </div>
-
-                <div class="favorite__contenido">
-                    <img src="build/img/stars.png" alt="calificacion restaurant">
-
-                    <h3 class="favorite__name">TacoBell</h3>
-                    <p class="favorite__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure sed! Ducimus magnam eveniet fugit atque maxime architecto necessitatibus esse.</p>
-                </div>
+          <div class="favorite__grid">
+            <div class="favorite__imagen">
+              <img src="build/img/logo_salads.png" alt="logo restaurant" />
             </div>
-        </div> <!--.favorite-->
-    </div>
-</main>
 
-  <!-- download app -->
+            <div class="favorite__contenido">
+              <img src="build/img/stars.png" alt="calificacion restaurant" />
 
-  <section class="download">
-    <div class="download__grid container">
+              <h3 class="favorite__name">Indian Food</h3>
+              <p class="favorite__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure
+                sed! Ducimus magnam eveniet fugit atque maxime architecto
+                necessitatibus esse.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--.favorite-->
+
+        <div class="favorite">
+          <div class="favorite__grid">
+            <div class="favorite__imagen">
+              <img src="build/img/logo_salads.png" alt="logo restaurant" />
+            </div>
+
+            <div class="favorite__contenido">
+              <img src="build/img/stars.png" alt="calificacion restaurant" />
+
+              <h3 class="favorite__name">TacoBell</h3>
+              <p class="favorite__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eos ullam mollitia et sit sequi est perspiciatis qui, ex, iure
+                sed! Ducimus magnam eveniet fugit atque maxime architecto
+                necessitatibus esse.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--.favorite-->
+      </div>
+    </main>
+
+    <!-- download app -->
+
+    <section class="download">
+      <div class="download__grid container">
         <div class="download__image">
-            <img src="build/img/app.png" alt="image app">
+          <img src="build/img/app.png" alt="image app" />
         </div>
 
         <div class="stores">
-            <h3 class="stores__heading">Download App</h3>
-            <p class="stores__texto">Available in Android and iOS</p>
+          <h3 class="stores__heading">Download App</h3>
+          <p class="stores__texto">Available in Android and iOS</p>
 
-            <div class="stores__grid">
-                <a href="#" class="stores__link">
-                    <img src="build/img/store-apple.svg" alt="apple store">
-                </a>
-                <a href="#" class="stores__link">
-                    <img src="build/img/store-android.svg" alt="google store">
-                </a>
-            </div>
+          <div class="stores__grid">
+            <a href="#" class="stores__link">
+              <img src="build/img/store-apple.svg" alt="apple store" />
+            </a>
+            <a href="#" class="stores__link">
+              <img src="build/img/store-android.svg" alt="google store" />
+            </a>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
     <!-- footer -->
 
     <footer class="footer container">
       <section class="footer__grid container">
         <div class="footer container-logo">
-          <a class="footer__appetite-logo" href="https://github.com/chicacode/appetite-delivery-app">
-            <img src="./build/img/Appetite.svg" class="jet-logo__img" alt="appetite" />
+          <a
+            class="footer__appetite-logo"
+            href="https://github.com/chicacode/appetite-delivery-app"
+          >
+            <img
+              src="./build/img/Appetite.svg"
+              class="jet-logo__img"
+              alt="appetite"
+            />
           </a>
         </div>
         <nav class="footer__nav" aria-label="">
-            <p class="footer__nav-description">Follow us</p>
-          <a href="#" class="footer__link facebook px-2 icon-social fs-4"><i class="fab fa-facebook text-dark"></i>Facebook</a>
-          <a href="#" class="footer__link twitter px-2  icon-social fs-4"><i class="fab fa-twitter text-dark"></i>Twitter</a>
-          <a href="#" class="footer__link linkedin px-2 icon-social fs-4"><i class="fab fa-linkedin-in text-dark"></i>LinkedIn</a>
-          <a href="#" class="footer__link pinterest px-2 icon-social fs-4"><i class="fab fa-pinterest text-dark"></i>Pinterest</a>
-          <a href="#" class="footer__link instagram px-2 icon-social fs-4"><i class="fab fa-instagram text-dark"></i>Instagram</a>
+          <p class="footer__nav-description">Follow us</p>
+          <a href="#" class="footer__link facebook px-2 icon-social fs-4"
+            ><i class="fab fa-facebook text-dark"></i>Facebook</a
+          >
+          <a href="#" class="footer__link twitter px-2 icon-social fs-4"
+            ><i class="fab fa-twitter text-dark"></i>Twitter</a
+          >
+          <a href="#" class="footer__link linkedin px-2 icon-social fs-4"
+            ><i class="fab fa-linkedin-in text-dark"></i>LinkedIn</a
+          >
+          <a href="#" class="footer__link pinterest px-2 icon-social fs-4"
+            ><i class="fab fa-pinterest text-dark"></i>Pinterest</a
+          >
+          <a href="#" class="footer__link instagram px-2 icon-social fs-4"
+            ><i class="fab fa-instagram text-dark"></i>Instagram</a
+          >
         </nav>
         <div class="footer__description">
           <p>
