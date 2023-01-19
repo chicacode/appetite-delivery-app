@@ -35,7 +35,7 @@
       <div class="header__logo">
         <img src="./build/img/Appetite.svg" alt="app delivery logo" />
       </div>
-      <nav class="nav">
+      <nav class="nav" aria-label="">
         <a href="https://glovoapp.com/" class="nav_link nav_link-get-started">Get started</a>
         <a href="https://glovoapp.com/" class="nav_link nav_link-register">Register Restaurant</a>
       </nav>
@@ -262,22 +262,22 @@
     <footer class="footer container">
       <section class="footer__grid container">
         <div class="footer container-logo">
-          <a class="appetite-logo" href="https://github.com/mauro3333/appetite_order_delivery_management">
-            <img src="/img/Appetite.png" class="jet-logo__img" alt="appetite" srcset="/img/Appetite.png" />
+          <a class="footer__appetite-logo" href="https://github.com/chicacode/appetite-delivery-app">
+            <img src="./build/img/Appetite.svg" class="jet-logo__img" alt="appetite" />
           </a>
         </div>
-        <div class="">
-          <a href="#" class="facebook px-2 icon-social fs-4"><i class="fab fa-facebook text-dark"></i></a>
-          <a href="#" class="twitter px-2  icon-social fs-4"><i class="fab fa-twitter text-dark"></i></a>
-          <a href="#" class="linkedin px-2 icon-social fs-4"><i class="fab fa-linkedin-in text-dark"></i></a>
-          <a href="#" class="pinterest px-2 icon-social fs-4"><i class="fab fa-pinterest text-dark"></i></a>
-          <a href="#" class="instagram px-2 icon-social fs-4"><i class="fab fa-instagram text-dark"></i></a>
-          <a href="#" class="dribble px-2 icon-social fs-4"><i class="fab fa-dribbble text-dark"></i></a>
-        </div>
-        <div class="">
+        <nav class="footer__nav" aria-label="">
+            <p class="footer__nav-description">Follow us</p>
+          <a href="#" class="footer__link facebook px-2 icon-social fs-4"><i class="fab fa-facebook text-dark"></i>Facebook</a>
+          <a href="#" class="footer__link twitter px-2  icon-social fs-4"><i class="fab fa-twitter text-dark"></i>Twitter</a>
+          <a href="#" class="footer__link linkedin px-2 icon-social fs-4"><i class="fab fa-linkedin-in text-dark"></i>LinkedIn</a>
+          <a href="#" class="footer__link pinterest px-2 icon-social fs-4"><i class="fab fa-pinterest text-dark"></i>Pinterest</a>
+          <a href="#" class="footer__link instagram px-2 icon-social fs-4"><i class="fab fa-instagram text-dark"></i>Instagram</a>
+        </nav>
+        <div class="footer__description">
           <p>
             Appetite Delivery app
-            <small>©. All rights reserved 2022</small>
+            <small class="footer__copyright">©. All rights reserved 2022</small>
           </p>
         </div>
       </section>

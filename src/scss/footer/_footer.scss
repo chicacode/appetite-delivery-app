@@ -3,12 +3,66 @@
 
 
 .footer{
-    background-color: variables.$primary;
-    padding-top: variables.$padding-xl;
+    background-color: variables.$dark-gray;
+    padding: variables.$padding-xl;
 
     &__grid{
         @include mixins.ipad{
             @include mixins.grid(3, 1rem)
+        }
+    }
+
+    &.container-logo{
+        margin-bottom: variables.$padding-md;
+        width: 200px;
+    }
+
+    &__appetite-logo{
+        padding-left: variables.$padding-lg;
+    }
+
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        margin-top: variables.$margin-xl;
+        &-description{
+            font-size: 20px;
+            font-weight: 900;
+            color: variables.$alpha-color;
+            padding-bottom: variables.$padding-md;
+        }
+    }
+
+    &__link{
+        font-size: 2rem;
+        line-height: 2;
+        color: variables.$white;
+        text-decoration: none;
+    }
+
+
+    &__description{
+        font-size: 2rem;
+        line-height: 2;
+        color: variables.$white;
+        text-align: center;
+        @include mixins.ipad{
+            text-align: left;
+        }
+    }
+
+    &__copyright{
+        background-color: variables.$alpha-color;
+        margin: variables.$margin-md;
+        color: variables.$dark-gray;
+        text-align: center;
+        padding: variables.$padding-lg;
+        border-radius: 24px;
+
+        &:hover{
+            background-color: variables.$accent;
+            color: variables.$white;
+            cursor: pointer;
         }
     }
 }
