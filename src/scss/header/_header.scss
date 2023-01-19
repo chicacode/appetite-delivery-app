@@ -1,19 +1,35 @@
-@use "variables";
+@use "base/variables";
+@use "base/mixins";
 
 .header {
-  background-color: variables.$primary;
+  background-color: variables.$alpha-color;
   height: 100px;
   display: flex;
-  flex-direction: column;
+//   flex-direction: column;
   align-items: center;
-}
+  justify-content: space-between;
+  padding: variables.$padding-xxl;
 
-.header__logo {
+  @include mixins.desktop{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 30rem;
+  }
 }
 
 .nav {
+
+    &.link{
+
+    }
 }
 
 .nav a {
   text-decoration: none;
+  color: variables.$dark-gray;
+  font-size: 20px;
+  padding-right: variables.$margin-md;
 }

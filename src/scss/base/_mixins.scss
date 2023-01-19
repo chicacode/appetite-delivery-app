@@ -1,0 +1,19 @@
+@use 'variables';
+
+@mixin mobile{
+    @media (min-width: variables.$mobile) {
+        @content;
+    }
+}
+
+@mixin ipad{
+    @media (min-width: variables.$ipad) {
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media (min-width: variables.$desktop) {
+        @content; 
+    }
+}

@@ -14,29 +14,45 @@
       referrerpolicy="no-referrer"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./build/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    rel="shortcut icon"
-    type="image/png"
-    href="./img/icons8-motorcycle-delivery-multiple-boxes-48.png"
-  />
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./build/css/app.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./build/img/icons8-motorcycle-delivery-multiple-boxes-48.png"
+    />
     <title>appetite delivery app</title>
   </head>
   <body>
     <!-- header -->
-   
+
     <header class="header container">
-        <div class="header__logo">
-            <img src="./img/Appetite.svg" alt="app delivery logo">
-        </div>
-        <nav class="nav">
-            <a href="#" class="link">Log In</a>
-            <a href="#" class="link">Get started</a>
-            <a href="#" class="link">Register Restaurant</a>
-        </nav>
+      <div class="header__logo">
+        <img src="./build/img/Appetite.svg" alt="app delivery logo" />
+      </div>
+      <nav class="nav">
+        <a href="https://glovoapp.com/" class="link">Log In</a>
+        <a href="https://glovoapp.com/" class="link nav__link-get-started">Get started</a>
+        <a href="https://glovoapp.com/" class="link nav__link-register">Register Restaurant</a>
+      </nav>
     </header>
+
+    <section class="container form">
+      <div class="form_grid">
+        <div class="form__content">
+          <h2 class="form__heading-title">Food delivery and more</h2>
+          <p>Groceries, shop, pharmacy and anything</p>
+          <form class="form__search">
+            <label for="restaurant" class="form__label">Restaurant</label>
+            <input type="text" name="restaurant" id="restaurant" class="form__input">
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
