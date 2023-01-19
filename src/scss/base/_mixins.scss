@@ -1,19 +1,25 @@
-@use 'variables';
+@use "variables";
 
-@mixin mobile{
-    @media (min-width: variables.$mobile) {
-        @content;
-    }
+@mixin mobile {
+  @media (min-width: variables.$mobile) {
+    @content;
+  }
 }
 
-@mixin ipad{
-    @media (min-width: variables.$ipad) {
-        @content;
-    }
+@mixin ipad {
+  @media (min-width: variables.$ipad) {
+    @content;
+  }
 }
 
-@mixin desktop{
-    @media (min-width: variables.$desktop) {
-        @content; 
-    }
+@mixin desktop {
+  @media (min-width: variables.$desktop) {
+    @content;
+  }
+}
+
+@mixin grid($column, $padding) {
+  display: grid;
+  gap: $padding;
+  grid-template-columns: repeat($column, 1fr);
 }
