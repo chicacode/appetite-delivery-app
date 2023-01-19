@@ -49,9 +49,5 @@
       background-color: variables.$primary-hover;
       color: variables.$primary;
     }
-
-    @include ipad {
-      width: auto;
-    }
   }
 }

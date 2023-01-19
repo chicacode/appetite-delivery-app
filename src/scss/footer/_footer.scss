@@ -1,0 +1,14 @@
+@use 'base/variables';
+@use 'base/mixins';
+
+
+.footer{
+    background-color: variables.$primary;
+    padding-top: variables.$padding-xl;
+
+    &__grid{
+        @include mixins.ipad{
+            @include mixins.grid(3, 1rem)
+        }
+    }
+}

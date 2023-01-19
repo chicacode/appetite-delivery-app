@@ -391,3 +391,15 @@ body {
   background-color: rgba(120, 1, 23, 0.7019607843);
   color: #780116;
 }
+
+.footer {
+  background-color: #780116;
+  padding-top: 2rem;
+}
+@media (min-width: 768px) {
+  .footer__grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
