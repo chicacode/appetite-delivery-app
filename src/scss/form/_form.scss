@@ -14,6 +14,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        margin-left: variables.$margin-xl;
+        margin-right: variables.$margin-xl;
+        border-radius: 12px;
     }
 
     &__heading-title{
