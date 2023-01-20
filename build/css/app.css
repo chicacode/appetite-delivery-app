@@ -395,7 +395,9 @@ body {
 .nav_link:hover {
   cursor: pointer;
   background-color: rgba(120, 1, 23, 0.7019607843);
-  color: #780116;
+  color: #f6f8ff;
+  border-radius: 24px;
+  padding: 1.5rem;
 }
 
 .footer {
@@ -546,10 +548,54 @@ body {
           justify-content: center;
 }
 .form__image {
-  width: 30rem;
+  width: 300px;
 }
 @media (min-width: 1024px) {
   .form__image {
-    width: 100%;
+    width: 50%;
   }
+}
+
+.steps {
+  margin-top: 5rem;
+}
+.steps__wave {
+  margin-top: -1px;
+}
+.steps__content {
+  background-color: #780116;
+  margin-top: -1rem;
+}
+.steps__heading {
+  text-align: center;
+  color: #fff;
+  padding-top: 1.5rem;
+  font-size: 2.8rem;
+}
+.steps__heading--description {
+  font-size: 1.8rem;
+  display: block;
+}
+@media (min-width: 768px) {
+  .steps__grid {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.steps__image {
+  width: 300px;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 300ms;
+       -o-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+.steps__image:hover {
+  -webkit-transform: rotate(-4deg) scale(1.2);
+      -ms-transform: rotate(-4deg) scale(1.2);
+          transform: rotate(-4deg) scale(1.2);
 }

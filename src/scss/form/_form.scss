@@ -81,9 +81,9 @@
     }
     
     &__image{
-        width: 30rem;
+        width: 300px;
         @include mixins.desktop{
-            width: 100%;
+            width: 50%;
         }
     }
 
