@@ -1,0 +1,20 @@
+@use 'base/variables';
+@use 'base/mixins';
+
+.favorites{
+    background-color: variables.$dark-gray;
+    padding: variables.$padding-lg;
+
+    &__heading{
+        text-align: center;
+        color: variables.$alpha-color;
+        font-size: 2rem;
+        padding: variables.$padding-lg
+    }
+
+    &__grid{
+        @include mixins.ipad{
+            @include mixins.grid(2, 4rem);
+        }
+    }
+}
