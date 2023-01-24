@@ -1,0 +1,30 @@
+@use 'base/variables';
+@use 'base/mixins';
+
+.download{
+    background-color: variables.$gray;
+    padding: variables.$padding-lg;
+    &__grid {
+        display: flex;
+        flex-direction: column-reverse;
+        @include mixins.ipad { 
+            @include mixins.grid(2, variables.$padding-lg);
+        }
+    }
+
+    &__image {
+        width: 50%;
+        margin: 5rem auto 0 auto;
+        transition-property: transform;
+        transition-duration: 300ms;
+        background-color: aqua;
+
+        @include mixins.ipad { 
+            margin-top: 0;
+        }
+
+        &:hover {
+            transform: rotate(4deg) scale(1.2);
+        }
+    }
+}
