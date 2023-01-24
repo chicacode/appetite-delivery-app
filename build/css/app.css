@@ -383,6 +383,12 @@ body {
   max-width: 20rem;
   margin: 0 auto 2rem auto;
 }
+.favorite__image-style {
+  border-radius: 12px;
+}
+.favorite__image-style:hover {
+  cursor: pointer;
+}
 .favorite__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -526,6 +532,9 @@ body {
   line-height: 2;
   color: #fff;
   text-decoration: none;
+}
+.footer__link-icon {
+  padding-left: 1.5rem;
 }
 .footer__description {
   font-size: 2rem;

@@ -39,6 +39,10 @@
         text-decoration: none;
     }
 
+    &__link-icon{
+        padding-left: variables.$padding-lg;
+    }
+
 
     &__description{
         font-size: 2rem;
