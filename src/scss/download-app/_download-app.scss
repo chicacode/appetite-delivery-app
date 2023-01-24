@@ -17,7 +17,6 @@
         margin: 5rem auto 0 auto;
         transition-property: transform;
         transition-duration: 300ms;
-        background-color: aqua;
 
         @include mixins.ipad { 
             margin-top: 0;
@@ -25,6 +24,38 @@
 
         &:hover {
             transform: rotate(4deg) scale(1.2);
+        }
+    }
+}
+
+.stores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__heading,
+    &__text {
+        text-align: center
+    }
+    &__heading {
+        color: variables.$secondary;
+        margin: 2rem 0 0 0;
+        font-size: 6rem;
+    }
+    &__text {
+        margin-bottom: 3rem;
+        font-size: 2.5rem;
+    }
+
+    &__grid {
+        @include mixins.grid(2, 2rem);
+    }
+    &__enlace {
+        transition-property: transform;
+        transition-duration: 500ms;
+
+        &:hover {
+            transform: scale(1.2);
         }
     }
 }

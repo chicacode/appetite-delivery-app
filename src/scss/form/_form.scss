@@ -28,7 +28,7 @@
     &__heading-description{
         color: variables.$alpha-color;
         text-align: center;
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     &__search{
@@ -40,7 +40,7 @@
         text-transform: uppercase;
         color: variables.$alpha-color;
         margin: 1rem 0;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 
     &__input{
@@ -57,7 +57,7 @@
     &__submit{
         margin-top: variables.$margin-xl;
         background-color: variables.$secondary;
-        font-size: 14px;
+        font-size: 2.5rem;
         line-height: 1.43;
         padding: 1.2rem 3rem;
         font-weight: 700;
@@ -72,8 +72,8 @@
 
         &:hover {
             cursor: pointer;
-            background-color: variables.$accent;
-            color: variables.$primary;
+            background-color: variables.$primary-hover;
+            color: variables.$gray;
           }
     }
 
@@ -86,7 +86,7 @@
     &__image{
         width: 300px;
         @include mixins.desktop{
-            width: 50%;
+            width: 85%;
         }
     }
 

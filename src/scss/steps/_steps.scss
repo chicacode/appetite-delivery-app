@@ -1,41 +1,43 @@
 @use "base/variables";
 @use "base/mixins";
 
-.steps{
-    margin-top: 5rem;
+.steps {
+  margin-top: 5rem;
 
-    &__wave{
-        margin-top: -1px;
-    }
+  &__wave {
+    margin-top: -1px;
+  }
 
-    &__content{
-        background-color: variables.$primary;
-        margin-top: -1rem;
-    }
+  &__content {
+    background-color: rgba(232,117,0,1);
+    background: linear-gradient(1deg, rgba(248,183,1,1) 2%, rgba(232,117,0,1) 100%);
+    margin-top: -1rem;
+  }
 
-    &__heading{
-        text-align: center;
-        color: variables.$white;
-        padding-top: variables.$padding-lg;
-        font-size: 2.8rem;
-        &--description{
-            font-size: 1.8rem;
-            display: block;
-        }
+  &__heading {
+    text-align: center;
+    color: variables.$white;
+    padding-top: variables.$margin-xl;
+    font-size: 5.8rem;
+    &--description {
+      font-size: 3.8rem;
+      display: block;
     }
+  }
 
-    &__grid{
-        @include mixins.ipad{
-            @include mixins.grid(3, variables.$padding-xxl);
-        }
-    }
 
-    &__image{
-        width: 300px;
-        transition-property: transform;
-        transition-duration: 300ms;
-        &:hover{
-            transform: rotate(-4deg) scale(1.2);
-        }
+  &__step {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(232,117,0,1);
+    background: linear-gradient(12deg, rgba(248,183,1,1) 0%, rgba(232,117,0,1) 100%);
+  }
+
+  &__image {border-radius: 12px;
+    transition-property: transform;
+    transition-duration: 300ms;
+    &:hover {
+      transform: rotate(-4deg) scale(1.2);
     }
+  }
 }
