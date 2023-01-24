@@ -12,13 +12,13 @@ be a product promotion, product detail, company website.
 
 ## App Evolution
 
-- Index
+1.  Index
   ![alt text](./build/img/readme-app1.png "image")
 
-- Landing Page Design
+2.  Landing Page Design
   ![alt text](./build/img/readme-app-2.png "image")
 
-  - Landing Page Design
+3.  Landing Page Design
   ![alt text](./build/img/readme-app-3.png "image")
 
 ## To run this project
@@ -26,10 +26,10 @@ be a product promotion, product detail, company website.
 1. Clone repo
 Clone the repository [here]( https://github.com/chicacode/appetite-delivery-app.git) to go to my Github repository.
 
-2. NPM Install
-- npm i
+2. ## NPM Install
+`npm i`
 
-3. Run App
+3. ## Run App
 - gulp dev
 
 
