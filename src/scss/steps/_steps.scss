@@ -10,7 +10,6 @@
 
   &__content {
     background-color: rgba(232,117,0,1);
-    background: linear-gradient(1deg, rgba(248,183,1,1) 2%, rgba(232,117,0,1) 100%);
     margin-top: -1rem;
   }
 
@@ -30,7 +29,6 @@
     display: flex;
     justify-content: center;
     background-color: rgba(232,117,0,1);
-    background: linear-gradient(12deg, rgba(248,183,1,1) 0%, rgba(232,117,0,1) 100%);
   }
 
   &__image {border-radius: 12px;
@@ -38,6 +36,12 @@
     transition-duration: 300ms;
     &:hover {
       transform: rotate(-4deg) scale(1.2);
+    }
+    @include mixins.mobile{
+        width: 600px;
+    }
+    @include mixins.desktop{
+        width: 1200px;
     }
   }
 }
